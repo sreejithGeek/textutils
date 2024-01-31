@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Text Util</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <style>
+    /* Custom styles for the navbar */
+    .custom-navbar {
+        background: linear-gradient(to right, #3498db, #2980b9); /* Gradient color - adjust as needed */
+        color: #ffffff; /* Text color */
+      }
+  
+      .custom-navbar a {
+        color: #ffffff; /* Link color */
+      }
+  
+      .custom-navbar a:hover {
+        color: #ffffff; /* Hovered link color */
+      }
+      .custom-btn {
+        background-color: #e74c3c; /* Custom button color - adjust as needed */
+        border-color: #e74c3c; /* Border color */
+        color: #ffffff; /* Text color */
+      }
+  
+      .custom-btn:hover {
+        background-color: #c0392b; /* Hovered button color - adjust as needed */
+        border-color: #c0392b; /* Hovered border color */
+        color: #ffffff; /* Hovered text color */
+      }  
+      </style>  
+
+</head>
+  <body>
+     <nav class="navbar navbar-expand-lg navbar-light custom-navbar">
+        <div class="container-fluid">
+          <a class="navbar-brand">TextUtils Website</a>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success custom-btn " type="submit">Search</button>
+          </form>
+        </div>
+      </nav>
+      <div class="container">
+        <div class="row">
+            <form action="analyze" method="get">
+                <h1 class="mt-3">Utils Service</h1>
+                <div class="mb-3">
+                  <label for="exampleInputEmail1" class="form-label">Enter Your Text</label>
+                  <textarea class="form-control" rows="3" name="text"></textarea>
+
+                </div>
+                
+                <div class="mb-3 form-check">
+                  <input type="checkbox" class="form-check-input" id="exampleCheck1" name="re">
+                  <label class="form-check-label" for="exampleCheck1 ">Remove Punjuction</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1" name="capi">
+                    <label class="form-check-label" for="inlineCheckbox1">Capitilize</label>
+                  </div><br>
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </form>
+        </div>
+      </div>
+   
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  </body>
+</html>
